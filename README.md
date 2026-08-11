@@ -1,4 +1,4 @@
-# ⚡ Fast Multi-Threaded Port Scanner
+# Simple Port Scanner
 
 A lightweight Python port scanner built using standard libraries (`socket` and `concurrent.futures`). Designed to quickly scan target hosts for open ports using multithreading for increased performance.
 
@@ -25,6 +25,6 @@ Run the script directly via your terminal or Kali Linux:
 ```bash
 python3 port_scanner.py
 
-⚠️ Disclaimer
+  ⚠️ Disclaimer
 ​This tool is created strictly for educational purposes and authorized network security testing. Do not scan targets without prior explicit permission.
 ​Author: @haikal-sec
