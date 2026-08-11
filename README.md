@@ -6,6 +6,12 @@ Created as part of my cybersecurity scripting exercises and network reconnaissan
 
 ---
 
+# ⚠️ Disclaimer
+​This tool is created strictly for educational purposes and authorized network security testing. Do not scan targets without prior explicit permission.    
+Author: @haikal-sec
+
+---
+
 ## 🚀 Features
 
 - **Multi-threaded Performance:** Uses `ThreadPoolExecutor` with up to 100 concurrent workers to scan ports rapidly.
@@ -19,12 +25,14 @@ Created as part of my cybersecurity scripting exercises and network reconnaissan
 ### 1. Requirements
 - Python 3.x installed on your machine.
 
-### 2. Execution
-Run the script directly via your terminal or Kali Linux:
-
-```bash
+### 2. Before that you need to manually change ip address
+```
+if __name__ == "__main__":
+    target = "127.0.0.1" # replace with the target IP address or hostname 
+    ports = range(1, 1025)
+    fast_port_scanner(target, ports)
+```
+### 3. Execute with terminal
+```
 python3 port_scanner.py
-
-  ⚠️ Disclaimer
-​This tool is created strictly for educational purposes and authorized network security testing. Do not scan targets without prior explicit permission.
-​Author: @haikal-sec
+```
